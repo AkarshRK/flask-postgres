@@ -1,4 +1,5 @@
 Step 1: Install pipenv and pyenv and install Python 3.7.1 using pyenv
+
 Step 2: Create a directory and clone the repository
         - git clone https://github.com/AkarshRK/flask-postgres.git
         - cd flask-postgres
@@ -15,9 +16,10 @@ Step 4: Install and setup postgres database
             - ALTER USER postgres WITH PASSWORD 'postgres';
             - createdb cust_db
             - grant all privileges on cust_db to postgres;
+
 Step 5: Set the following system environment variables
         $ export FLASK_ENV=development
-        $ export DATABASE_URL= postgres://name:password@houst:port/blog_api_db
+        $ export DATABASE_URL= postgresql://postgres:postgres@localhost/cust_db
         $ export JWT_SECRET_KEY = klinifyklinify
 
 Step 6: Database Migrations:
